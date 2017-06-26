@@ -1,0 +1,17 @@
+my:
+  servers:
+    - dev.bar.com
+    - foo.bar.com
+    - jiaobuchong.com
+  webserver: 
+    prot: 80
+    threadpool: 
+      maxThread: 100
+      minTread: 8
+      idleTimeout: 60000
+  db: 
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/etl
+    userename: root
+    password: test
+    

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho-kettle:kettle-engine:6.1.0.1-196">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-engine/6.1.0.1-196/kettle-engine-6.1.0.1-196.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-engine/6.1.0.1-196/kettle-engine-6.1.0.1-196-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-engine/6.1.0.1-196/kettle-engine-6.1.0.1-196-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
