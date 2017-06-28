@@ -5,9 +5,6 @@ import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
 import java.text.ParseException;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by zhangzhimin on 6/14/17.
  * quartz调度程序

@@ -2,6 +2,10 @@ package myKettle.test;
 
 import myKettle.utils.KettleUtil;
 import org.json.JSONArray;
+import org.pentaho.di.www.Carte;
+import org.pentaho.di.www.CarteServlet;
+import org.pentaho.di.www.SlaveServerConfig;
+import org.pentaho.di.www.TransformationMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -20,7 +24,6 @@ import java.util.Map;
 public class HelloController {
     @Value("${userName}")
     private String userName;
-
     @Value("${bookTitle}")
     private String bookTitle;
     @RequestMapping("/hello")
@@ -47,4 +50,12 @@ public class HelloController {
     public void CreateTransXML(String params){
         JSONArray ja = new JSONArray(params);        
     }
+    
+    public void testCarte() throws Exception{
+        SlaveServerConfig slaveServerConfig = new SlaveServerConfig();
+        Carte c = new Carte(slaveServerConfig);
+        c.getWebServer().getTransformationMap();
+        TransformationMap transformationMap;
+    }
+    
 }
