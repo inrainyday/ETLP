@@ -4,6 +4,7 @@ package myKettle.utils;
  * Created by lvyang on 5/9/17.
  */
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
@@ -12,6 +13,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig.Feature;
 import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
 import org.codehaus.jackson.type.TypeReference;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class JsonBinder {
@@ -125,7 +127,26 @@ public class JsonBinder {
             return null;
         }
     }
+    public static boolean[] BooleanArrayTrans(String string) {
+        String[] s = string.split(",");
+        boolean[] b = new boolean[s.length];
+        for(int i=0;i<s.length;i++){
+            b[i]=Boolean.valueOf(s[i]);
+        }
+        return b;
+    }
+    public static int[] IntArrayTrans(String string) {
+        String[] s = string.split(",");
+        int[] b = new int[s.length];
+        for(int i=0;i<s.length;i++){
+            b[i]=Integer.valueOf(s[i]);
+        }
+        return b;
+    }
     public static void main(String[] args) {
-
+        String[] s = "1,,null".split(",");
+      //  System.out.print(Double.valueOf("-1.7976931348623157E308D"));
+        String s1 = null;
+        System.out.print(s1 == null);
     }
 }
